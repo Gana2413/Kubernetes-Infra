@@ -1,0 +1,10 @@
+ai:
+  enabled: true
+  model: gpt-4o-mini
+  backend: openai
+  secret:
+    name: k8sgpt-secret
+    key: openai-api-key
+
+cluster:
+  namespace: default

@@ -1,0 +1,5 @@
+apiVersion: v2
+name: sample-backend
+description: A simple backend app deployed on Kubernetes using Helm
+version: 0.1.0
+appVersion: "1.0"

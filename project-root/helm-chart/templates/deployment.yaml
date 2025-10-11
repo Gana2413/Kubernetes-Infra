@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sample-backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sample-backend
+  template:
+    metadata:
+      labels:
+        app: sample-backend
+    spec:
+      containers:
+      - name: sample-backend
+        image: sample-backend:dev
+        ports:
+        - containerPort: 3000
